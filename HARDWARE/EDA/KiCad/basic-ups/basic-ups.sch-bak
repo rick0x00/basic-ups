@@ -14,6 +14,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
+L Device:Battery_Cell BT?
+U 1 1 61A501E1
+P 5000 3050
+F 0 "BT?" H 5118 3146 50  0000 L CNN
+F 1 "Battery_Cell" H 5118 3055 50  0000 L CNN
+F 2 "" V 5000 3110 50  0001 C CNN
+F 3 "~" V 5000 3110 50  0001 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
 L Device:D D?
 U 1 1 61A50590
 P 4700 2550
@@ -116,7 +127,7 @@ L Device:CP C?
 U 1 1 61A54892
 P 5750 3000
 F 0 "C?" H 5868 3046 50  0000 L CNN
-F 1 "250uF" H 5868 2955 50  0000 L CNN
+F 1 "CP" H 5868 2955 50  0000 L CNN
 F 2 "" H 5788 2850 50  0001 C CNN
 F 3 "~" H 5750 3000 50  0001 C CNN
 	1    5750 3000
@@ -201,15 +212,4 @@ Wire Wire Line
 	6100 2250 6100 3500
 Wire Wire Line
 	6100 2250 6200 2250
-$Comp
-L Device:Battery_Cell BT?
-U 1 1 61A501E1
-P 5000 3050
-F 0 "BT?" H 5118 3146 50  0000 L CNN
-F 1 "Battery_Cell" H 5118 3055 50  0000 L CNN
-F 2 "" V 5000 3110 50  0001 C CNN
-F 3 "~" V 5000 3110 50  0001 C CNN
-	1    5000 3050
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

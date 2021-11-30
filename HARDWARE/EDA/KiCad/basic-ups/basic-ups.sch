@@ -13,59 +13,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:D D?
-U 1 1 61A50590
-P 4700 2550
-F 0 "D?" H 4700 2334 50  0000 C CNN
-F 1 "D" H 4700 2425 50  0000 C CNN
-F 2 "" H 4700 2550 50  0001 C CNN
-F 3 "~" H 4700 2550 50  0001 C CNN
-	1    4700 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 61A50A64
-P 5300 2550
-F 0 "D?" H 5300 2334 50  0000 C CNN
-F 1 "D" H 5300 2425 50  0000 C CNN
-F 2 "" H 5300 2550 50  0001 C CNN
-F 3 "~" H 5300 2550 50  0001 C CNN
-	1    5300 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 61A50D97
-P 5000 2150
-F 0 "D?" H 5000 1934 50  0000 C CNN
-F 1 "D" H 5000 2025 50  0000 C CNN
-F 2 "" H 5000 2150 50  0001 C CNN
-F 3 "~" H 5000 2150 50  0001 C CNN
-	1    5000 2150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5150 2550 5000 2550
 Wire Wire Line
 	5000 2850 5000 2550
 Connection ~ 5000 2550
 Wire Wire Line
 	5000 2550 4850 2550
-Wire Wire Line
-	5150 2150 5750 2150
-Wire Wire Line
-	5750 2150 5750 2550
-Wire Wire Line
-	5750 2550 5450 2550
 $Comp
 L Device:R R?
 U 1 1 61A51A68
 P 4300 2350
 F 0 "R?" H 4370 2396 50  0000 L CNN
-F 1 "220R" H 4370 2305 50  0000 L CNN
-F 2 "" V 4230 2350 50  0001 C CNN
+F 1 "1R" H 4370 2305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4230 2350 50  0001 C CNN
 F 3 "~" H 4300 2350 50  0001 C CNN
 	1    4300 2350
 	1    0    0    -1  
@@ -73,12 +32,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 61A51CAF
-P 4300 2800
-F 0 "R?" H 4370 2846 50  0000 L CNN
-F 1 "150R" H 4370 2755 50  0000 L CNN
-F 2 "" V 4230 2800 50  0001 C CNN
-F 3 "~" H 4300 2800 50  0001 C CNN
-	1    4300 2800
+P 4150 2800
+F 0 "R?" H 4220 2846 50  0000 L CNN
+F 1 "220R" H 4220 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4080 2800 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+	1    4150 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -86,49 +45,37 @@ Wire Wire Line
 Wire Wire Line
 	4300 2550 4550 2550
 Wire Wire Line
-	4850 2150 4300 2150
+	5000 2150 4300 2150
 Wire Wire Line
 	4300 2150 4300 2200
-Wire Wire Line
-	4300 2650 4300 2550
-Connection ~ 4300 2550
 $Comp
 L Device:LED D?
 U 1 1 61A52EF1
-P 4300 3150
-F 0 "D?" V 4339 3033 50  0000 R CNN
-F 1 "LED" V 4248 3033 50  0000 R CNN
-F 2 "" H 4300 3150 50  0001 C CNN
-F 3 "~" H 4300 3150 50  0001 C CNN
-	1    4300 3150
+P 4150 3150
+F 0 "D?" V 4189 3033 50  0000 R CNN
+F 1 "in" V 4098 3033 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4150 3150 50  0001 C CNN
+F 3 "~" H 4150 3150 50  0001 C CNN
+	1    4150 3150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4300 3000 4300 2950
+	4150 3000 4150 2950
 Wire Wire Line
-	4300 3300 4300 3400
-Wire Wire Line
-	4300 3400 5000 3400
-Wire Wire Line
-	5000 3400 5000 3150
+	4150 3300 4150 3400
 $Comp
 L Device:CP C?
 U 1 1 61A54892
-P 5750 3000
-F 0 "C?" H 5868 3046 50  0000 L CNN
-F 1 "250uF" H 5868 2955 50  0000 L CNN
-F 2 "" H 5788 2850 50  0001 C CNN
-F 3 "~" H 5750 3000 50  0001 C CNN
-	1    5750 3000
-	1    0    0    -1  
+P 5950 3000
+F 0 "C?" H 6068 3046 50  0000 L CNN
+F 1 "16v 100uF" H 6068 2955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5988 2850 50  0001 C CNN
+F 3 "~" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2850 5750 2550
-Connection ~ 5750 2550
-Wire Wire Line
-	5750 3150 5750 3400
-Wire Wire Line
-	5750 3400 5000 3400
+	5950 3150 5950 3400
 Connection ~ 5000 3400
 $Comp
 L power:GND #PWR?
@@ -144,33 +91,8 @@ $EndComp
 Wire Wire Line
 	5000 3500 5000 3400
 Wire Wire Line
-	4300 2150 3900 2150
+	4300 2150 4150 2150
 Connection ~ 4300 2150
-Wire Wire Line
-	5750 2150 6200 2150
-Connection ~ 5750 2150
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 61A54B66
-P 6400 2250
-F 0 "J?" H 6372 2132 50  0000 R CNN
-F 1 "OUTPUT" H 6550 2050 50  0000 R CNN
-F 2 "" H 6400 2250 50  0001 C CNN
-F 3 "~" H 6400 2250 50  0001 C CNN
-	1    6400 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 61A55222
-P 3700 2250
-F 0 "J?" H 3592 1925 50  0000 C CNN
-F 1 "INPUT" H 3592 2016 50  0000 C CNN
-F 2 "" H 3700 2250 50  0001 C CNN
-F 3 "~" H 3700 2250 50  0001 C CNN
-	1    3700 2250
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61A55C4A
@@ -189,27 +111,209 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 61A57CC9
-P 6100 3500
-F 0 "#PWR?" H 6100 3250 50  0001 C CNN
-F 1 "GND" H 6105 3327 50  0000 C CNN
-F 2 "" H 6100 3500 50  0001 C CNN
-F 3 "" H 6100 3500 50  0001 C CNN
-	1    6100 3500
+P 6600 3500
+F 0 "#PWR?" H 6600 3250 50  0001 C CNN
+F 1 "GND" H 6605 3327 50  0000 C CNN
+F 2 "" H 6600 3500 50  0001 C CNN
+F 3 "" H 6600 3500 50  0001 C CNN
+	1    6600 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 2250 6100 3500
+	6600 2250 6600 3500
 Wire Wire Line
-	6100 2250 6200 2250
+	6600 2250 6700 2250
 $Comp
 L Device:Battery_Cell BT?
 U 1 1 61A501E1
 P 5000 3050
 F 0 "BT?" H 5118 3146 50  0000 L CNN
-F 1 "Battery_Cell" H 5118 3055 50  0000 L CNN
-F 2 "" V 5000 3110 50  0001 C CNN
+F 1 "Battery_Cell" H 5000 3000 50  0000 L CNN
+F 2 "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical" V 5000 3110 50  0001 C CNN
 F 3 "~" V 5000 3110 50  0001 C CNN
 	1    5000 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5408 D?
+U 1 1 61A5D2B4
+P 5150 2150
+F 0 "D?" H 5150 1934 50  0000 C CNN
+F 1 "1N5408" H 5150 2025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5150 1975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 5150 2150 50  0001 C CNN
+	1    5150 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5408 D?
+U 1 1 61A5E1C1
+P 4700 2550
+F 0 "D?" H 4700 2334 50  0000 C CNN
+F 1 "1N5408" H 4700 2425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4700 2375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4700 2550 50  0001 C CNN
+	1    4700 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5408 D?
+U 1 1 61A5E9C4
+P 5650 2550
+F 0 "D?" H 5650 2334 50  0000 C CNN
+F 1 "1N5408" H 5650 2425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5650 2375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 5650 2550 50  0001 C CNN
+	1    5650 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A6431A
+P 5200 2800
+F 0 "R?" H 5270 2846 50  0000 L CNN
+F 1 "220R" H 5270 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5130 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+	1    5200 2800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5200 2650 5200 2550
+$Comp
+L Device:LED D?
+U 1 1 61A64321
+P 5200 3150
+F 0 "D?" V 5239 3033 50  0000 R CNN
+F 1 "batt" V 5148 3033 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 5200 3150 50  0001 C CNN
+F 3 "~" H 5200 3150 50  0001 C CNN
+	1    5200 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3000 5200 2950
+Wire Wire Line
+	5200 3300 5200 3400
+Wire Wire Line
+	5300 2150 5950 2150
+Wire Wire Line
+	5000 3400 5200 3400
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 61A66AEB
+P 3700 2250
+F 0 "J?" H 3618 1925 50  0000 C CNN
+F 1 "input" H 3618 2016 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 3700 2250 50  0001 C CNN
+F 3 "~" H 3700 2250 50  0001 C CNN
+	1    3700 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 61A6A2EE
+P 6900 2250
+F 0 "J?" H 6818 1925 50  0000 C CNN
+F 1 "output" H 6818 2016 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 6900 2250 50  0001 C CNN
+F 3 "~" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	1    0    0    1   
+$EndComp
+Text Label 5000 2450 0    50   ~ 0
+batt
+$Comp
+L power:GND #PWR?
+U 1 1 61A73207
+P 6500 1750
+F 0 "#PWR?" H 6500 1500 50  0001 C CNN
+F 1 "GND" H 6505 1577 50  0000 C CNN
+F 2 "" H 6500 1750 50  0001 C CNN
+F 3 "" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 61A7393C
+P 6800 1650
+F 0 "J?" H 6772 1532 50  0000 R CNN
+F 1 "batt" H 6850 1400 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 6800 1650 50  0001 C CNN
+F 3 "~" H 6800 1650 50  0001 C CNN
+	1    6800 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 1650 6500 1650
+Wire Wire Line
+	6500 1650 6500 1750
+Text Label 6500 1550 2    50   ~ 0
+batt
+Wire Wire Line
+	6500 1550 6600 1550
+Wire Wire Line
+	4150 3400 5000 3400
+Wire Wire Line
+	4150 2650 4150 2150
+Connection ~ 4150 2150
+Wire Wire Line
+	4150 2150 3900 2150
+Wire Wire Line
+	5000 3150 5000 3400
+Connection ~ 5200 3400
+Wire Wire Line
+	5200 3400 5950 3400
+Wire Wire Line
+	5000 2550 5200 2550
+Wire Wire Line
+	5950 2150 5950 2550
+Wire Wire Line
+	5200 2550 5500 2550
+Connection ~ 5200 2550
+Wire Wire Line
+	5800 2550 5950 2550
+Connection ~ 5950 2550
+Wire Wire Line
+	5950 2550 5950 2850
+Wire Wire Line
+	5000 2450 5000 2550
+$Comp
+L Device:R R?
+U 1 1 61ABC2FF
+P 6200 2800
+F 0 "R?" H 6270 2846 50  0000 L CNN
+F 1 "220R" H 6270 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6130 2800 50  0001 C CNN
+F 3 "~" H 6200 2800 50  0001 C CNN
+	1    6200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61ABC305
+P 6200 3150
+F 0 "D?" V 6239 3033 50  0000 R CNN
+F 1 "out" V 6148 3033 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6200 3150 50  0001 C CNN
+F 3 "~" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3000 6200 2950
+Wire Wire Line
+	6200 3300 6200 3400
+Wire Wire Line
+	6200 2650 6200 2150
+Connection ~ 6200 2150
+Wire Wire Line
+	6200 2150 6700 2150
+Wire Wire Line
+	5950 2150 6200 2150
+Connection ~ 5950 2150
+Wire Wire Line
+	6200 3400 5950 3400
+Connection ~ 5950 3400
 $EndSCHEMATC
